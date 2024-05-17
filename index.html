@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr">    
 
 <head>
     <meta charset="UTF-8">
@@ -16,81 +16,365 @@
 
 <body>
     <div class="main-container">
-        <header></header>
-        <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+        <!-- Header -->
+        <header>
+            <img class="header-image" src="images/logo/Booki@3x.png" alt="Booki">
+            <nav class="header-nav">
+                <a class="link-nav" href="#hosting" data-active="true">Hébergement</a>
+                <a class="link-nav" href="#activity" data-active="false">Activités</a>
+            </nav>
+        </header>
+        <!-- Fin Header -->
 
-                </section>
-                <section class="populaires">
-                    <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+        <!-- Main  -->
+        <main>
+            <!-- Search  -->
+            <section class="search">
+                <search class="search-header">
+                    <h1 class="search-header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="search-header-subtitle">En pleine centre de ville ou en pleine nature</p>
+                </search>
+                <form class="search-form" action="proceed-form.html" method="get">
+                    <span class="search-form-pointmap">
+                        <i class="fas fa-map-marker-alt search-form-pointmap" aria-hidden="true">
+                        </i>
+                    </span>
+                    <input class="search-form-input" type="search" placeholder="Marseille, France" size="1">
+                    <button class="search-form-submit-input">
+                        <span class="search-form-submit-input-text">Rechercher</span>
+                        <!-- <i class="search-form-submit-input-icon fas fa-search" aria-hidden="true"></i> -->
+                    </button>
+                </form>
+
+
+                <div class="search-Filters">    
+                    <h2 class="search-filters-title">Filtres</h2>
+
+                    <div class="search-filters-filter">
+                        <div class="search-filters-filter-Wrapicon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        <span class="search-filters-filter-title">Économique</span>
                     </div>
-                    <div class="populaires-cards">
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="#">
-                            <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                                <div class="card-content">
-                                    <div class="card-txt">
-                                        <h3 class="card-title">Hôtel Bleu et Blanc</h3>
-                                        <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
-                                    </div>
-                                    <div class="card-rating">
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                        <span class="sr-only">Note de 4 sur 5</span>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
+
+                    <div class="search-filters-filter">
+                        <div class="search-filters-filter-Wrapicon">
+                            <i class="fa-solid fa-person"></i>
+                        </div>
+                        <span class="search-filters-filter-title">Familial</span>
                     </div>
-                </section>
-            </div>
+                    
+                    <div class="search-filters-filter">
+                        <div class="search-filters-filter-Wrapicon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <span class="search-filters-filter-title">Romantique</span>
+                    </div>
+
+                    <div class="search-filters-filter">
+                        <div class="search-filters-filter-Wrapicon">
+                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                        </div>
+                        <span class="search-filters-filter-title">Nos pépites</span>
+                    </div>
+
+                    
+                </div>
+
+                <div class="search-result">
+                    <div class="search-result-Wrapicon">
+                        <i class="fas fa-info search-result-Wrapicon-icon" aria-hidden="true"></i>
+                    </div>
+                    <p class="search-result-text"> Plus de 500 logements sont disponibles dans cette ville </p>
+                </div>
+            </section>
+            <!-- Fin Search -->
+
+
+            <!-- Hébergements and populaires -->
+            <section class="hosting" id="hosting">
+                <div class="hosting_main hosting_background">
+                    
+                    <header class="hosting_main_header">
+                        <h2 class="hosting_main_header_title hosting_title Raleway_bold">Hébergements à Marseille</h2>
+                    </header>
+                    
+                    <div class="hosting_main_cards">
+                        <article class="hosting_main_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_main_card_fig hosting_card_fig">
+                                    <img class="hosting_main_card_fig_img hosting_card_fig_img" src="images/hebergements/marcus-loke.jpg" alt="Chambre lumineuse avec lit superposé donant sur le centre ville." />
+                                    <figcaption class="hosting_main_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_main_card_fig_caption_desc">
+                                            <h3 class="hosting_main_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Auberge - La Cannebière</h3>
+                                            <p class="hosting_main_card_from hosting_card_from">Nuit à partir de  <span class="hosting_main_card_from_price Raleway_bold">25€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+    
+                        <article class="hosting_main_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_main_card_fig hosting_card_fig">
+                                    <img class="hosting_main_card_fig_img hosting_card_fig_img" src="images/hebergements/fred-kleber.jpg" alt="Chambre lumineuse avec deux lits simples." />
+                                    <figcaption class="hosting_main_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_main_card_fig_caption_desc">
+                                            <h3 class="hosting_main_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Hôtel du port</h3>
+                                            <p class="hosting_main_card_from hosting_card_from">Nuit à partir de  <span class="hosting_main_card_from_price Raleway_bold">52€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                        
+                        <article class="hosting_main_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_main_card_fig hosting_card_fig">
+                                    <img class="hosting_main_card_fig_img hosting_card_fig_img" src="images/hebergements/reisetopia.jpg" alt="Chambre confort avec lit double." />
+                                    <figcaption class="hosting_main_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_main_card_fig_caption_desc">
+                                            <h3 class="hosting_main_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Hôtel - Les mouettes</h3>
+                                            <p class="hosting_main_card_from hosting_card_from">Nuit à partir de  <span class="hosting_main_card_from_price Raleway_bold">76€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+    
+                        <article class="hosting_main_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_main_card_fig hosting_card_fig">
+                                    <img class="hosting_main_card_fig_img hosting_card_fig_img" src="images/hebergements/annie-spratt.jpg" alt="Chambre lumineuse typique bord de mer." />
+                                    <figcaption class="hosting_main_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_main_card_fig_caption_desc">
+                                            <h3 class="hosting_main_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Hôtel de la mer</h3>
+                                            <p class="hosting_main_card_from hosting_card_from">Nuit à partir de  <span class="hosting_main_card_from_price Raleway_bold">46€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+    
+                        <article class="hosting_main_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_main_card_fig hosting_card_fig">
+                                    <img class="hosting_main_card_fig_img hosting_card_fig_img" src="images/hebergements/nicate-lee.jpg" alt="Chambre rustique avec lits superposés." />
+                                    <figcaption class="hosting_main_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_main_card_fig_caption_desc">
+                                            <h3 class="hosting_main_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Auberge - Le Panier</h3>
+                                            <p class="hosting_main_card_from hosting_card_from">Nuit à partir de  <span class="hosting_main_card_from_price Raleway_bold">23€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+    
+                        <article class="hosting_main_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_main_card_fig hosting_card_fig">
+                                    <img class="hosting_main_card_fig_img hosting_card_fig_img" src="images/hebergements/febrian-zakaria.jpg" alt="Chambre lumineuse classique avec TV." />
+                                    <figcaption class="hosting_main_card_fig_caption">
+                                        <div class="hosting_main_card_fig_caption_desc hosting_card_fig_caption">
+                                            <h3 class="hosting_main_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Hôtel - Chez Amina</h3>
+                                            <p class="hosting_main_card_from hosting_card_from">Nuit à partir de  <span class="hosting_main_card_from_price Raleway_bold">96€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+    
+                    <moore class="hosting_main_card_footer">
+                        <a class="hosting_main_card_footer_link Raleway_bold" href="#">Afficher plus</a>
+                    </moore>
+                </div>
+                
+                <aside class="hosting_popular hosting_background">
+                    <header class="hosting_popular_header">
+                        <h2 class="hosting_popular_header_title hosting_title Raleway_bold">Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line hosting_popular_header_icon"></i>
+                    </header>
+    
+                    <div class="hosting_popular_cards">
+                        <article class="hosting_popular_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_popular_card_fig hosting_card_fig">
+                                    <img class="hosting_popular_card_fig_img hosting_card_fig_img" src="images/hebergements/emile-guillemot.jpg" alt="Chambre lumineuse style bohème." />
+                                    <figcaption class="hosting_popular_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_popular_card_fig_caption_desc">
+                                            <h3 class="hosting_popular_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Hôtel - Le soleil du matin</h3>
+                                            <p class="hosting_popular_card_from hosting_card_from">Nuit à partir de  <span class="hosting_popular_card_from_price Raleway_bold">128€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+    
+                        <article class="hosting_popular_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_popular_card_fig hosting_card_fig">
+                                    <img class="hosting_popular_card_fig_img hosting_card_fig_img" src="images/hebergements/aw-creative.jpg" alt="Chambre spacieuse, moderne, style scandinave." />
+                                    <figcaption class="hosting_popular_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_popular_card_fig_caption_desc">
+                                            <h3 class="hosting_popular_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Chambres d'hôtes - Au coeur de l'eau</h3>
+                                            <p class="hosting_popular_card_from hosting_card_from">Nuit à partir de  <span class="hosting_popular_card_from_price Raleway_bold">71€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+    
+                        <article class="hosting_popular_card hosting_card">
+                            <a href="#">
+                                <figure class="hosting_popular_card_fig hosting_card_fig">
+                                    <img class="hosting_popular_card_fig_img hosting_card_fig_img" src="images/hebergements/febrian-zakaria2.jpg" alt="Chambre classique, lit confort." />
+                                    <figcaption class="hosting_popular_card_fig_caption hosting_card_fig_caption">
+                                        <div class="hosting_popular_card_fig_caption_desc">
+                                            <h3 class="hosting_popular_card_fig_caption_title hosting_card_fig_caption_title Raleway_bold">Hôtel - Tout bleu et blanc</h3>
+                                            <p class="hosting_popular_card_from hosting_card_from">Nuit à partir de  <span class="hosting_popular_card_from_price Raleway_bold">68€</span></p>
+                                        </div>
+                                        <div class="hosting_card_stars">
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_on"></i>
+                                            <i class="fa-solid fa-star hosting_card_star_off"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+                </aside>
+            </section>
+            <!-- Fin Hébergements and populaires -->
+
+            <!-- Activités -->
+
+            <section class="container container-activities" id="activities">
+				<div>
+					<h2>Activités à Marseille</h2>
+					<div class="activities hover-black flex-row">
+						<a href="#" class="card">
+							<article class="data-activities">
+								<img src="images/activites/reno-laithienne.jpg"
+									alt="Le Vieux-Port">
+								<h3>Vieux-Port</h3>
+							</article>
+						</a>
+						<a href="#" class="card">
+							<article class="data-activities">
+								<img src="images/activites/paul-hermann.jpg"
+									alt="Le fort de Pomègues">
+								<h3>Fort de Pomègues</h3>
+							</article>
+						</a>
+						<a href="#" class="card">
+							<article class="data-activities">
+								<img src="images/activites/kilyan-sockalingum.jpg"
+									alt="Le parc national des Calanques">
+								<h3>Parc national des Calanques</h3>
+							</article>
+						</a>
+						<a href="#" class="card">
+							<article class="data-activities">
+								<img src="images/activites/florian-wehde.jpg"
+									alt="Notre-Dame-de-la-Garde">
+								<h3>Notre-Dame-de-la-Garde</h3>
+							</article>
+						</a>
+					</div>
+				</div>
+			</section>
+            
+            <!-- Fin Activités -->
         </main>
-        <footer></footer>
+        <!-- Fin Main  -->
     </div>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <h2 class="title">À propos</h2>
+            <ul>
+                <li><a href="rgpd.html#functioning">Fonctionnement du site</a></li>
+                <li><a href="rgpd.html#terms">Conditions générales</a></li>
+                <li><a href="rgpd.html#data">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="title">Nos hébergements</h2>
+            <ul>
+                <li><a href="index.html#">Charte qualité</a></li>
+                <li><a href="index.html#">Proposer votre hôtel</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="title">Assistance</h2>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="mailto:btebib6@gmail.com">Nous contacter</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Fin footer -->
 </body>
 
 </html>
