@@ -24,8 +24,17 @@ body {
 }
 
 .main-container {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 0rem 2rem;
 }
+
+/***** Size title ******/
+
+.hosting_main_header_title, .hosting_popular_header_title
+{
+    font-size: 1rem;
+}
+
+/***** Size title ******/
 
 /***** Header ******/
 
@@ -42,6 +51,8 @@ header {
     width: 61.09px;
 }
 
+
+
 nav {
     /* outline: solid 2px rgb(255, 140, 0);     */
 }
@@ -52,8 +63,12 @@ nav {
     padding-inline-end: 0;
 }
 
-.link-nav[data-active=true] {
+.link-nav[data-active=true] {   
     color: #0065FC;
+}
+
+.link-nav[href="#hosting"]:hover {
+    border-top: 2px solid #000; /* Vous pouvez changer la couleur selon vos besoins */
 }
 
 /***** Fin Header ******/
@@ -77,7 +92,7 @@ nav {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0.5em 0;
 }
 
@@ -178,7 +193,8 @@ form {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1rem;
+    margin-top: 1rem;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -278,13 +294,17 @@ a {
 
 h3 {
     display: block;
-    font-size: 1.17em;
+    font-size: 14px;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     unicode-bidi: isolate;
+}
+
+.container-activities {
+    margin-top: 3rem;
 }
 
 .container-activities h3, .container-activities h4 {
@@ -303,9 +323,14 @@ h3 {
     border-radius: 20px;
 }
 
-.hosting_title, .hosting_popular_header_icon {
+.hosting_popular_header_icon {
     margin: 30px 30px 15px 30px;
     font-size: 20px;
+}
+
+.hosting_title {
+    margin: 30px 30px 15px 30px;
+    font-size: 1rem;
 }
 
 .hosting_card {
@@ -338,7 +363,7 @@ h3 {
 }
 
 .hosting_card_fig_caption_title {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .hosting_card_from {
@@ -362,6 +387,10 @@ h3 {
 .hosting_card_fig_caption_title, .hosting_card_from {
     margin: 0px;
     padding-left: 5px;
+}
+
+.hosting_main_card_footer_link {
+    font-weight: bold;
 }
 
 /* HOSTING MAIN */
@@ -516,6 +545,7 @@ footer h2 {
 
 footer {
     margin-top: 5rem;
+    
     list-style-type: none;
     outline: none;
     font-family: 'Raleway', sans-serif; 
@@ -554,11 +584,57 @@ footer {
     }
 
     p{
-        font-size: 0.85rem;
+        font-size: 0.74rem;
     } 
 
+    header {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
+    .title, input, input::placeholder, 
+    .search-filters-filter-title {
+        font-size: 12px;
+    }
+
+    .search-filters-filter-Wrapicon {
+        margin: -10px -13px;
+    }
+
+    .search-form {  
+        width: 39%;
+        height: 3rem;
+    }
+
+    .search-form-input {
+        padding: 0 1rem;
+        width: 100%;
+        color: #000;
+    }
+
+    .search-form-submit-input {
+        font-size: 12px;
+        padding: 0 1rem;
+    }
+
+    .search-form-pointmap {
+        padding: 0.6rem 0.4rem;
+    }
+
+    .search-filters-filter {
+        margin-right: 0.7rem;
+    }
+
+    .search-filters-title {
+        width: 100%;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
     .header-nav {
-        padding: 0 3.125rem;
+        padding: unset;
     }
 
     .hosting {
@@ -567,6 +643,12 @@ footer {
 
     .hosting_main {
         width: 100%;
+    }
+
+    .hosting_main_card_fig_img {
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        height: 100px;
     }
 
     .hosting_popular {
@@ -592,6 +674,10 @@ footer {
         font-size: 13px;
     }
 
+    .hosting_popular_card_fig_img {
+        min-width: 20%;
+    }
+
     .container-activities img {
         width: 100%;
         height: 200px;
@@ -605,10 +691,34 @@ footer {
 @media (max-width: 767.98px) {
     /* ... */
 
+    .main-container {
+        padding: 0rem 0rem 0rem 0rem;
+    }
     header {
         display: flex;  
         flex-direction: column;
         justify-content: center;
         margin-bottom: 1.875rem;    
       }
+
+    .header-image {
+        padding-top: 20px;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 90px;
+        margin: 32px 10px;  
+    }
+
+    .link-nav[data-active=true] {
+
+        border-bottom: solid #0065fc 5px;
+    }
+
+
+
+
 }
