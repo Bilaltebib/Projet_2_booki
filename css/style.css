@@ -564,6 +564,10 @@ footer {
     --main-border-color: #d9d9d9;
 }
 
+.all-filters {
+    display: flex;
+}
+
 /* footer */
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -683,7 +687,7 @@ footer {
         height: 200px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-}
+    }
 }
 
 
@@ -692,8 +696,9 @@ footer {
     /* ... */
 
     .main-container {
-        padding: 0rem 0rem 0rem 0rem;
+        padding-inline: 2px;
     }
+
     header {
         display: flex;  
         flex-direction: column;
@@ -706,19 +711,111 @@ footer {
     }
 
     .header-nav {
+        width: 100% ;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 90px;
-        margin: 32px 10px;  
+
     }
 
     .link-nav[data-active=true] {
-
-        border-bottom: solid #0065fc 5px;
+        border-bottom: solid #0065fc 3px;
     }
 
+    .link-nav[data-active=false] {
+        border-bottom: solid gray 3px;
+    }
 
+    .link-nav {
+        display: flex;
+        padding: 2rem;
+        width: 50%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
 
+    .search-header-title{
+        font-size: 1.5rem;
+        padding: var(--pad);
+    }
 
+    main {
+        --pad: 10px;
+    }
+
+    .search {
+        padding: var(--pad)
+    }
+
+    p {
+        font-size: unset;
+        padding: var(--pad);
+        color: black
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+    .all-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search-filters-filter {
+        flex: 45% 1 1;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-form-submit-input-text {
+        display: none;
+    }
+
+    .hosting {
+        margin-top: unset;
+    }
+
+    .hosting_popular {
+        order: -1;
+    }
+
+    .hosting_background {
+        border-radius: unset;
+    }
+
+    .hosting_popular_header {
+        flex-direction: unset;
+        margin-bottom: unset;
+    }
+
+    .hosting_popular_cards {
+        display: flex;
+        padding-inline: var(--pad);
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .hosting_main_card {
+        width: unset;
+        height: auto;
+        flex: 29% 1 1;
+        min-width: 200px;
+    }
+
+    .hosting_main.hosting_background {
+        background-color: unset;
+        border: unset;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        width: 300%;
+    }
+
+    footer {
+        margin-top: 2rem;
+        display: unset;
+        padding: 15px;
+    }
 }
