@@ -20,7 +20,7 @@
         <header>
             <img class="header-image" src="images/logo/Booki@3x.png" alt="Booki">
             <nav class="header-nav">
-                <a class="link-nav" href="#hosting" data-active="true">Hébergement</a>
+                <a class="link-nav" href="#hosting" data-active="true">Hébergements</a>
                 <a class="link-nav" href="#activity" data-active="false">Activités</a>
             </nav>
         </header>
@@ -36,12 +36,14 @@
                 </search>
                 <form class="search-form" action="proceed-form.html" method="get">
                     <span class="search-form-pointmap">
-                        <i class="fas fa-map-marker-alt search-form-pointmap" aria-hidden="true">
-                        </i>
+                        <i class="fas fa-map-marker-alt search-form-pointmap" aria-hidden="true"></i>
                     </span>
                     <input class="search-form-input" type="text" placeholder="Marseille, France">
                     <button class="search-form-submit-input">
                         <span class="search-form-submit-input-text">Rechercher</span>
+                        <span class="search-form-submit-input-logo">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
                         <!-- <i class="search-form-submit-input-icon fas fa-search" aria-hidden="true"></i> -->
                     </button>
                 </form>
@@ -97,9 +99,9 @@
             <section class="hosting" id="hosting">
                 <div class="hosting_main hosting_background">
                     
-                    <header class="hosting_main_header">
+                    <header_hosting class="hosting_main_header">
                         <h2 class="hosting_main_header_title hosting_title Raleway_bold">Hébergements à Marseille</h2>
-                    </header>
+                    </header_hosting>
                     
                     <div class="hosting_main_cards">
                         <article class="hosting_main_card hosting_card">
@@ -310,7 +312,7 @@
 
             <!-- Activités -->
 
-            <section class="container container-activities" id="activities">
+            <section class="container container-activities" id="activity">
 				<div>
 					<h2>Activités à Marseille</h2>
 					<div class="activities hover-black flex-row">
