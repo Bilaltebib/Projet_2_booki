@@ -47,6 +47,11 @@ header {
     align-items: center;
 }
 
+header.hosting_popular_header {
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
 .header-image {
     width: 61.09px;
 }
@@ -751,7 +756,6 @@ footer {
 
     .search-header-title{
         font-size: 1.5rem;
-        padding: var(--pad);
     }
 
     .search {
@@ -760,7 +764,6 @@ footer {
 
     p {
         font-size: unset;
-        padding: var(--pad);
         color: black
     }
 
@@ -809,6 +812,15 @@ footer {
     .hosting_popular_header {
         flex-direction: unset;
         margin-bottom: unset;
+        padding-inline: var(--pad);
+    }
+
+    .hosting_title {
+        margin: 30px 30px 15px 0px; 
+    }
+
+    .hosting_popular_header_icon {
+        margin: unset;
     }
 
     .hosting_popular_cards {
@@ -816,18 +828,32 @@ footer {
         padding-inline: var(--pad);
         flex-direction: column;
         justify-content: unset;
+        margin-bottom: 10px;
     }
 
     .hosting_main_card {
-        width: 90%;
+        width: 100%;
     }
 
     .hosting_main_cards {
         display: flex;
-        flex-direction: column;
         padding-inline: var(--pad);
-        flex-wrap: unset;
         align-items: center;
+        align-content: space-between;
+
+    }
+
+    .hosting_popular_card {
+        width: 100%;
+    }
+
+    .hosting_card {
+        margin : 10px 0px;
+    }
+
+    h2.hosting_main_header_title.hosting_title.Raleway_bold {
+        padding-inline: var(--pad);
+        margin: 0px 30px 15px 0px;
     }
 
     .hosting_main.hosting_background {
@@ -836,7 +862,8 @@ footer {
     }
 
     .hosting_main_card_footer {
-        padding: 2rem;
+        padding: unset;
+        padding-inline: var(--pad);
     }
 
     .flex-row {
@@ -846,8 +873,9 @@ footer {
 
     footer {
         margin-top: 2rem;
-        display: unset;
-        padding: 15px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
     }
 
     .main-container {
@@ -865,41 +893,45 @@ footer {
     .activities .card {
         display: flex;
         flex-direction: column;
-        padding-inline:var(--pad) ;
-        padding: 5px;
         flex-wrap: unset;
-        width: 88%;
+        width: 100%;
     }
 
     .flex-row {
-        display: flex;
         flex-direction: column;
-        width: unset;
-        padding-inline: var(--pad);
+        width: 100%;
         flex-wrap: unset;
         align-items: center;
     }
+
+    section#activity.container-activities {
+        padding-inline: 20px;
+    }
+
 
     .search-filters-filter {
         margin-right: 0%;
         margin-bottom: 0%;
     }
 
-    .hosting_title {
-        margin: 30px 30px 15px 20px;
-    }
-
-    h2 {
-        padding: 0rem 2rem;
-    }
 
     footer div {
         width: unset;
         min-width: 190px;
     }
 
-    a {
-        padding: 0rem 0rem 0rem 2rem;
+    footer ul {
+        padding-inline: 20px;
     }
 
-}
+    h2.title {
+        padding-inline: 20px;
+    }
+
+    main {
+        margin-bottom: 50px ;
+    }
+
+    .hosting_popular_card_fig_img {
+        min-width: 40%;
+    }
