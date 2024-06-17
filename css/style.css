@@ -14,7 +14,6 @@
 }
 
 body {
-    /* margin: 8px; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +38,6 @@ body {
 /***** Header ******/
 
 header {
-    /* outline: solid 2px rgb(255, 0, 0); */
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -54,12 +52,6 @@ header.hosting_popular_header {
 
 .header-image {
     width: 61.09px;
-}
-
-
-
-nav {
-    /* outline: solid 2px rgb(255, 140, 0);     */
 }
 
 .link-nav {
@@ -85,11 +77,6 @@ nav {
 
 /***** Search *****/
 
-
-
-/* .search-header{
-    border: solid 2px yellow;
-} */
 
 .search-header-title {
     display: block;
@@ -124,7 +111,6 @@ p {
 
 
 .search-form{   
-    /* outline: solid 2px #fc00ce;   */
     display: inline-flex;
     max-width: 100%;
     overflow: auto;
@@ -190,7 +176,6 @@ form {
 /***** Search-Filter *****/
 
 .search-Filters {
-    /* outline: solid 2px rgb(16, 226, 13); */
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -266,7 +251,6 @@ h2 {
 /***** Search Result  *****/
 
 .search-result {
-    /* outline: solid 2px #510142; */
     display: flex;
     align-items: center;
     margin: 1rem 0 2rem 0;
@@ -590,9 +574,6 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    /* .hebergements-and-populaires {
-        flex-direction: column;
-    } */
 
     body {
         padding-bottom: 0;    
@@ -918,6 +899,7 @@ footer {
     footer div {
         width: unset;
         min-width: 190px;
+        margin-top: 30px;
     }
 
     footer ul {
@@ -935,3 +917,4 @@ footer {
     .hosting_popular_card_fig_img {
         min-width: 40%;
     }
+}
